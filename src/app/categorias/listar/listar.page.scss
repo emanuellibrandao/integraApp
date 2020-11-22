@@ -1,0 +1,17 @@
+ion-note {
+
+    ion-icon {
+        font-size: 25px;
+        font-weight: bold;
+        color: yellow;
+    }
+
+    ion-icon+ion+icon {
+        margin-left: 20px;
+        color: red
+    }
+}
+
+p+p {
+    font-size: 18px;
+}

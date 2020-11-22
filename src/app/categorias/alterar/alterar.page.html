@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>Categorias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header color="warning">
+      <ion-card-title>Alterar</ion-card-title>
+    </ion-card-header>
+    <ion-item>
+      <ion-label position="stacked">Digite o nome</ion-label>
+      <ion-input [(ngModel)]="nome"></ion-input>
+    </ion-item>
+    <ion-button expand="full" size="large" color="warning" (click)="salvar()">SALVAR</ion-button>
+  </ion-card>
+  
+</ion-content>

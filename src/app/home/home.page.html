@@ -1,20 +1,61 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Blank
+      Integrador
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true" color="ligth">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+       <ion-button color="dark" espand="block" fill="outline" routerLink="/categorias/listar">
+        <div>
+          <img src="https://www.flaticon.com/svg/static/icons/svg/1524/1524539.svg">
+          <p>Categorias</p>
+        </div>
+       </ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="dark" expand="block" fill="outline">
+          <div>
+            <img src="https://www.flaticon.com/svg/static/icons/svg/3732/3732110.svg">
+            <p>Produtos</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="dark" expand="block" fill="outline">
+            <div>
+              <img src="https://www.flaticon.com/svg/static/icons/svg/2803/2803054.svg">
+              <p>Cidades</p>
+            </div>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="dark" expand="block" fill="outline" routerLink="/categorias/listar">
+            <div>
+              <img src="https://www.flaticon.com/svg/static/icons/svg/1924/1924414.svg">
+              <p>Clientes</p>
+            </div>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="dark" expand="block" fill="outline">
+            <div>
+              <img src="https://www.flaticon.com/svg/static/icons/svg/2649/2649390.svg">
+              <p>Pedidos</p>
+            </div>
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <!-- Precisa ter uma coluna vazia para não estragar o layout -->
+        </ion-col>
+      </ion-row>
+  </ion-grid>
 </ion-content>
